@@ -34,7 +34,6 @@ The Pi setup was audited against OMP's native tools and copied skills. This is a
 ## Do not port unchanged
 
 - `gpt-taste` overlaps with the installed `impeccable` and `design-taste-frontend` skills while imposing incompatible mandatory visual conventions.
-- `find-skills` is worth considering if you want discovery and installation from the open Agent Skills ecosystem: it uses `npx skills find`, `npx skills add`, and skills.sh quality checks. OMP's `manage_skill` manages existing skills but does not replace this external discovery workflow.
 - `wayfinder` and `setup-matt-pocock-skills` are issue-tracker-specific setup workflows and are intentionally not model-invocable.
 - `background-terminals` and `subagents` skills document capabilities OMP already provides natively.
 
