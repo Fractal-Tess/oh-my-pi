@@ -1,0 +1,8 @@
+# OMP runtime state is machine-local and may include credentials or conversation data.
+*
+
+# Versioned configuration and reusable skills.
+!.gitignore
+!config.yml
+!skills/
+!skills/**
