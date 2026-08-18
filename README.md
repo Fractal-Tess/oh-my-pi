@@ -36,4 +36,4 @@ See [INSTALL.md](INSTALL.md) for setup on a new or existing host. Upstream OMP d
 
 ## License
 
-Original configuration, documentation, assets, and Fractal Tess-authored skills are [MIT licensed](LICENSE). Copied skills retain their upstream terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Original configuration, documentation, assets, and Fractal Tess-authored skills are [MIT licensed](LICENSE). Copied skills retain their upstream terms.
