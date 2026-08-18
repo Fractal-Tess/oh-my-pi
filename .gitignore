@@ -4,6 +4,5 @@
 # Versioned configuration and reusable skills.
 !.gitignore
 !config.yml
-!PORTING.md
 !skills/
 !skills/**
