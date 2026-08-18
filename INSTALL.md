@@ -6,20 +6,9 @@ This repository contains OMP preferences and skills only. It does not include au
 
 Install Oh My Pi first using its [official installation instructions](https://github.com/can1357/oh-my-pi#install).
 
-## New host
+## Recommended: isolated profile
 
-Clone the repository into OMP's default user agent directory, then start OMP normally:
-
-```sh
-git clone https://github.com/Fractal-Tess/oh-my-pi.git ~/.omp/agent
-omp
-```
-
-Authenticate with the providers available on that host. Authentication remains local and is intentionally not tracked by this repository.
-
-## Existing host
-
-Use a named OMP profile to preserve the existing default configuration:
+Create the profile directory and clone this repository **before starting that profile for the first time**:
 
 ```sh
 mkdir -p ~/.omp/profiles/fractal-tess
@@ -27,15 +16,30 @@ git clone https://github.com/Fractal-Tess/oh-my-pi.git ~/.omp/profiles/fractal-t
 omp --profile fractal-tess
 ```
 
-The named profile has its own credentials, sessions, caches, and configuration. Review `config.yml` before making it your default profile.
+Authenticate with the providers available on that host. The named profile keeps its credentials, sessions, caches, and runtime databases separate from the default profile.
+
+## Existing default profile
+
+Do not clone into a populated `~/.omp/agent`; OMP creates runtime state there. Clone the configuration elsewhere, then intentionally overlay only the tracked configuration and skills:
+
+```sh
+git clone https://github.com/Fractal-Tess/oh-my-pi.git ~/.config/oh-my-pi
+cp ~/.config/oh-my-pi/config.yml ~/.omp/agent/config.yml
+mkdir -p ~/.omp/agent/skills
+cp -a ~/.config/oh-my-pi/skills/. ~/.omp/agent/skills/
+```
+
+Back up or review an existing `config.yml` first if it contains host-specific preferences you want to retain.
 
 ## Update
 
+For the isolated profile:
+
 ```sh
-git -C ~/.omp/agent pull --ff-only
+git -C ~/.omp/profiles/fractal-tess/agent pull --ff-only
 ```
 
-For a named profile, replace `~/.omp/agent` with that profile's `agent` directory.
+For an existing default profile, pull the clone under `~/.config/oh-my-pi` and repeat the explicit overlay above.
 
 ## What is tracked
 
