@@ -1,5 +1,5 @@
 <p align="center">
-  <strong style="font-size: 4rem">⌥</strong>
+  <img src="assets/omp-logo.webp" alt="omp" width="320" />
 </p>
 
 <h1 align="center">Oh My Pi</h1>

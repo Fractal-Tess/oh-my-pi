@@ -6,5 +6,7 @@
 !config.yml
 !README.md
 !INSTALL.md
+!assets/
+!assets/**
 !skills/
 !skills/**

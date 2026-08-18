@@ -28,6 +28,12 @@ Use one primary motif, not a collage. Favor faceted or sculptural forms, translu
 - For social cards, keep the mark/object distinct and leave a calm copy zone rather than filling the frame.
 - Make small-scale silhouettes survive favicon or app-icon reduction.
 
+## Logos and marks
+
+For a logo, app mark, or favicon, request a fully transparent background by default. State that the alpha channel must remain transparent around the mark and that the image must not simulate transparency with a dark, white, checkerboard, or scenic field. Use an opaque background only when the user explicitly asks for a lockup, social card, or other composed artwork.
+
+Keep the silhouette simple enough to survive small-size reduction. Avoid rendered words beyond the exact text the user explicitly requests.
+
 ## Prompt structure
 
 Write prompts in this order: subject, concept, composition, material/light, palette, texture, and exclusions. Name the chosen project hue and what it represents. Explain why the negative space exists.
