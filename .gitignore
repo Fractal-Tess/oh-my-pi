@@ -4,5 +4,7 @@
 # Versioned configuration and reusable skills.
 !.gitignore
 !config.yml
+!README.md
+!INSTALL.md
 !skills/
 !skills/**
